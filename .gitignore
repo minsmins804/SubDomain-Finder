@@ -1,0 +1,24 @@
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Môi trường ảo ---
+venv/
+.env/
+
+# --- Log và file tạm ---
+*.log
+*.tmp
+
+# --- VS Code ---
+.vscode/
+
+# --- Thư mục build hoặc output ---
+build/
+dist/
+
+# --- Hệ thống ---
+.DS_Store
+Thumbs.db
