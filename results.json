@@ -1,0 +1,15 @@
+{
+    "subdomains": [
+        "domainregistration.targetdomain.com",
+        "email.targetdomain.com",
+        "files.targetdomain.com",
+        "ftp.targetdomain.com",
+        "mail.targetdomain.com",
+        "pop.targetdomain.com",
+        "reseller.targetdomain.com",
+        "service.targetdomain.com",
+        "smtp.targetdomain.com",
+        "www.targetdomain.com"
+    ],
+    "count": 10
+}

@@ -1,0 +1,800 @@
+{
+  "count": 99,
+  "results": [
+    {
+      "host": "apps.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "host3.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "8080.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "pump3.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "host5.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "www2.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "atlanta.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "www3.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "konferencje.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "www4.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "purple.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "recruitics.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "backend.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "bucket.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "relay.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "bob.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "jabber.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "rooms.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "www1.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "ru.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "mail.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "wwww.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "conference.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "sales.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "conferencia.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "certs.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "caldav.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "account.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "logo.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "link2.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "link1.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "chair-dnrc.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "mail1.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "rteurl.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "search.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "server.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "serverabc.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "mxs.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "mock.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "corp.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "sip.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "crl2.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "my.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "crls.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "site.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "crt.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "myproxy.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "myupdateproxy.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "somelist.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "site2.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "acme.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "nowhereatall.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "myapp.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "de.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "dataservice.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "ns.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "site1.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "somewhere.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "currentdomain.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "status.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "evil.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "other.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "one.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "allowlisted.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "android.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "docs.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "srv2.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "foo.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "admin.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "es.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "another.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "en.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "spam.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "ns2.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "ns1.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "fr.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "pop.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "an.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "subdomain.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "supplier.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "project1.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "svn.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "gems.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "test1.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "proxy.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "gate.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "pump.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "test2.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "pump1.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "api.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "app.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "guts2.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "update.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "pump2.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "host2.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "host1.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "srv1.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    },
+    {
+      "host": "www.example.com",
+      "ips": [
+        "23.32.74.51",
+        "23.32.74.58"
+      ],
+      "http_ok": true,
+      "http_status": 200,
+      "final_url": "http://www.example.com",
+      "error": null
+    },
+    {
+      "host": "ftp.example.com",
+      "ips": [],
+      "http_ok": false,
+      "http_status": null,
+      "final_url": null,
+      "error": null
+    }
+  ]
+}

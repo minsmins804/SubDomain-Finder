@@ -21,7 +21,7 @@ class ServiceScanner:
             self.logger.warning("VirusTotal API key not found. Skipping VirusTotal search.")
             return set()
 
-        url = f"https://www.virustotal.com/vtapi/v2/domain/report"
+        url = "https://www.virustotal.com/vtapi/v2/domain/report"
         params = {
             'apikey': self.virustotal_api_key,
             'domain': self.domain
@@ -39,42 +39,51 @@ class ServiceScanner:
         return set()
 
     async def _search_dnsdumpster(self, session: aiohttp.ClientSession) -> Set[str]:
-        """Search DNSDumpster for subdomains."""
+        """Search DNSDumpster for subdomains (robust version)."""
         url = "https://dnsdumpster.com/"
         subdomains = set()
 
         try:
-            # Get CSRF token
+            # Get page
             async with session.get(url) as response:
-                if response.status == 200:
-                    text = await response.text()
-                    soup = BeautifulSoup(text, 'html.parser')
-                    csrf_token = soup.find('input', {'name': 'csrfmiddlewaretoken'})['value']
+                if response.status != 200:
+                    self.logger.warning(f"DNSDumpster returned status {response.status}")
+                    return subdomains
 
-                    # Submit search
-                    headers = {
-                        'Referer': url,
-                        'Cookie': f'csrftoken={csrf_token}'
-                    }
-                    data = {
-                        'csrfmiddlewaretoken': csrf_token,
-                        'targetip': self.domain
-                    }
-                    async with session.post(url, headers=headers, data=data) as search_response:
-                        if search_response.status == 200:
-                            text = await search_response.text()
-                            soup = BeautifulSoup(text, 'html.parser')
-                            
-                            # Extract subdomains from the table
-                            tables = soup.findAll('table')
-                            for table in tables:
-                                if table.find('td', {'class': 'col-md-4'}):
-                                    for row in table.findAll('tr'):
-                                        cols = row.findAll('td')
-                                        if cols and len(cols) >= 1:
-                                            subdomain = cols[0].text.strip()
-                                            if subdomain.endswith(self.domain):
-                                                subdomains.add(subdomain)
+                text = await response.text()
+                soup = BeautifulSoup(text, 'html.parser')
+
+                csrf_elem = soup.find('input', {'name': 'csrfmiddlewaretoken'})
+                if not csrf_elem:
+                    self.logger.warning("DNSDumpster: CSRF token not found; skipping search.")
+                    return subdomains
+
+                csrf_token = csrf_elem.get('value')
+                headers = {
+                    'Referer': url,
+                    'Cookie': f'csrftoken={csrf_token}',
+                    'User-Agent': 'Mozilla/5.0 (compatible)'
+                }
+                data = {
+                    'csrfmiddlewaretoken': csrf_token,
+                    'targetip': self.domain
+                }
+
+                async with session.post(url, headers=headers, data=data) as search_response:
+                    if search_response.status == 200:
+                        text = await search_response.text()
+                        soup = BeautifulSoup(text, 'html.parser')
+                        tables = soup.findAll('table')
+                        for table in tables:
+                            for row in table.findAll('tr'):
+                                cols = row.findAll('td')
+                                if cols and len(cols) >= 1:
+                                    candidate = cols[0].text.strip()
+                                    for sub in candidate.splitlines():
+                                        s = sub.strip()
+                                        if s and s.endswith(self.domain):
+                                            subdomains.add(s.lower())
+
         except Exception as e:
             self.logger.error(f"Error querying DNSDumpster: {str(e)}")
 

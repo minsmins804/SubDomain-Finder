@@ -25,7 +25,7 @@ def parse_arguments():
     )
     parser.add_argument('-d', '--domain', required=True, help='Target domain to scan')
     parser.add_argument(
-        '-w', 
+        '-w',
         '--wordlist',
         default='wordlists/default.txt',
         help='Path to wordlist for brute-force (default: wordlists/default.txt)'
@@ -53,11 +53,42 @@ def display_results(subdomains, source):
     table.add_column("No.", style="dim", width=6)
     table.add_column("Subdomain", style="green")
     table.add_column("Source", style="cyan")
-    
+
     for idx, subdomain in enumerate(sorted(subdomains), 1):
         table.add_row(f"{idx}", subdomain, source)
-    
+
     return table
+
+def make_default_output(domain: str, fmt: str) -> str:
+    """
+    Create a timestamped default filename for output.
+    fmt: 'json' or 'text'
+    """
+    ts = datetime.now().strftime("%Y%m%d_%H%M%S")
+    safe_domain = domain.replace("/", "_").replace("\\", "_")
+    if fmt == "json":
+        return f"results_{safe_domain}_{ts}.json"
+    else:
+        return f"results_{safe_domain}_{ts}.txt"
+
+def ensure_extension(path: str, fmt: str) -> str:
+    """
+    Ensure path ends with .json for json format or .txt for text.
+    If user passed a directory, create a filename inside it.
+    """
+    p = Path(path)
+    # if it's a directory (ends with path sep or is an existing dir), place file inside it
+    if str(path).endswith(os.path.sep) or p.is_dir():
+        return str(Path(path) / make_default_output("output", fmt))
+
+    suffix = p.suffix.lower()
+    if fmt == "json":
+        if suffix != ".json":
+            return str(p.with_suffix(".json"))
+    else:
+        if suffix not in (".txt", ".csv"):
+            return str(p.with_suffix(".txt"))
+    return str(p)
 
 async def main():
     args = parse_arguments()
@@ -68,20 +99,26 @@ async def main():
         sys.exit(1)
 
     try:
+        # Decide output filename (timestamped if not provided)
+        if args.output:
+            out_path = ensure_extension(args.output, args.format)
+        else:
+            out_path = make_default_output(args.domain, args.format)
+
         # Initialize scanners
         brute_force = BruteForceScanner(args.domain, args.wordlist, args.threads)
         service_scanner = ServiceScanner(args.domain)
 
         subdomains_from_brute = set()
         subdomains_from_services = set()
-        
+
         progress = Progress(
             SpinnerColumn(),
             TextColumn("[progress.description]{task.description}"),
             BarColumn(),
             TimeElapsedColumn()
         )
-        
+
         with progress:
             # Run brute force scanning
             task1 = progress.add_task("[cyan]Running brute force scan...", total=None)
@@ -95,7 +132,7 @@ async def main():
 
         # Clean and combine results
         all_subdomains = set()
-        
+
         # Process and display brute force results
         if subdomains_from_brute:
             clean_brute = clean_and_deduplicate_subdomains(subdomains_from_brute, args.domain)
@@ -116,11 +153,15 @@ async def main():
         if all_subdomains:
             final_results = sorted(all_subdomains)
             console.print(f"\n[bold green]Total unique subdomains found: {len(final_results)}[/bold green]")
-            
-            if args.output:
-                output_format = OutputFormat.JSON if args.format == 'json' else OutputFormat.TEXT
-                save_results(final_results, args.output, output_format)
-                console.print(f"[green]Results saved to '{args.output}'[/green]")
+
+            output_format = OutputFormat.JSON if args.format == 'json' else OutputFormat.TEXT
+            # ensure parent dir exists
+            out_parent = Path(out_path).parent
+            if not out_parent.exists():
+                out_parent.mkdir(parents=True, exist_ok=True)
+
+            save_results(final_results, out_path, output_format)
+            console.print(f"[green]Results saved to '{out_path}'[/green]")
         else:
             console.print("[yellow]No valid subdomains found.[/yellow]")
 

@@ -63,7 +63,6 @@ redirect
 sslvpn
 helpdesk
 live
-staging
 analytics
 ads
 stats
@@ -89,14 +88,12 @@ client
 clients
 partners
 int
-internal
 lab
 labs
 dev1
 dev2
 stage
 qa
-uat
 prod
 sandbox
 edu
