@@ -82,6 +82,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Acknowledgments
 
-- Inspired by [Sublist3r](https://github.com/aboul3la/Sublist3r)
-
 - Thanks to all third-party services for their APIs
+
