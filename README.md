@@ -6,62 +6,78 @@ Dự án được chuyển đổi từ Python Script sang Web Extension để ti
 ## 🚀 Tính năng nổi bật
 
 * **Tốc độ cao:** Sử dụng cơ chế tìm kiếm thụ động (Passive Enumeration) từ 3 nguồn uy tín:
-    * HackerTarget
-    * Crt.sh (Certificate Transparency)
-    * AlienVault OTX
+
+  * HackerTarget
+  * Crt.sh (Certificate Transparency)
+  * AlienVault OTX
+
 * **Không cần API Key:** Cài đặt là chạy ngay, không cần cấu hình phức tạp.
 * **Check Cloud Provider:** Tự động kiểm tra HTTP Header để phát hiện nếu subdomain đang sử dụng **Cloudflare** hoặc **AWS**.
 * **Tự động lưu (Auto-save):** Kết quả quét được lưu lại trong bộ nhớ trình duyệt, không bị mất đi khi tắt Popup.
 * **Tiện ích:**
-    * Click vào subdomain để mở tab mới.
-    * Nút **Copy All** để sao chép toàn bộ danh sách.
-    * Nút **Xóa** để dọn dẹp kết quả cũ.
 
-    ⚙️ Hướng dẫn cài đặt (Installation)
-Vì đây là Extension dạng Developer (Unpacked), bạn cần cài đặt thủ công theo 3 bước sau:
+  * Click vào subdomain để mở tab mới.
+  * Nút **Copy All** để sao chép toàn bộ danh sách.
+  * Nút **Xóa** để dọn dẹp kết quả cũ.
 
-Bước 1: Chuẩn bị
-Tải source code về máy và giải nén. Đảm bảo bạn đã thấy thư mục tên là MySubdomainTool chứa 4 file code trên.
+  ⚙️ Hướng dẫn cài đặt (Installation)
+  Vì đây là Extension dạng Developer (Unpacked), bạn cần cài đặt thủ công theo 3 bước sau:
 
-Bước 2: Mở trình quản lý Extension
-Mở trình duyệt (Chrome, Edge, Brave, hoặc Cốc Cốc).
+  
 
-Nhập địa chỉ sau vào thanh URL và nhấn Enter:
+  **Bước 1**: Chuẩn bị
+  Tải source code về máy và giải nén. Đảm bảo bạn đã thấy thư mục tên là MySubdomainTool chứa 4 file code trên.
 
-Chrome: chrome://extensions/
+  
 
-Edge: edge://extensions/
+  **Bước 2**: Mở trình quản lý Extension
+  Mở trình duyệt (Chrome, Edge, Brave, hoặc Cốc Cốc).
 
-QUAN TRỌNG: Bật chế độ Developer mode (Chế độ dành cho nhà phát triển) ở góc trên bên phải màn hình.
+  Nhập địa chỉ sau vào thanh URL và nhấn Enter:
 
-Bước 3: Tải Extension lên
-Nhấn vào nút Load unpacked (Tải tiện ích đã giải nén) ở góc trái trên cùng.
+  Chrome: chrome://extensions/
 
-Một cửa sổ chọn thư mục hiện ra.
+  Edge: edge://extensions/
 
-Lưu ý: Hãy chọn đúng thư mục MySubdomainTool (thư mục con chứa file manifest.json).
+  QUAN TRỌNG: Bật chế độ Developer mode (Chế độ dành cho nhà phát triển) ở góc trên bên phải màn hình.
 
-Nhấn Select Folder.
+  
 
-🎉 Xong! Biểu tượng Extension sẽ xuất hiện trên thanh công cụ của trình duyệt.
+  **Bước 3**: Tải Extension lên
+  Nhấn vào nút Load unpacked (Tải tiện ích đã giải nén) ở góc trái trên cùng.
 
-📖 Cách sử dụng
-Click vào icon Subdomain Finder trên thanh trình duyệt (Ghim nó ra ngoài để dễ bấm).
+  Một cửa sổ chọn thư mục hiện ra.
 
-Nhập tên miền cần quét vào ô trống (Ví dụ: uit.edu.vn, google.com).
+  Lưu ý: Hãy chọn đúng thư mục MySubdomainTool (thư mục con chứa file manifest.json).
 
-Nhấn Enter hoặc nút Quét.
+  Nhấn Select Folder.
 
-Đợi vài giây để tool thu thập dữ liệu.
+  🎉 Biểu tượng Extension sẽ xuất hiện trên thanh công cụ của trình duyệt.
 
-Kết quả sẽ hiển thị danh sách Subdomain và trạng thái Server (Cloudflare/AWS/Online).
+  
 
-⚠️ Lưu ý
-Tool sử dụng các nguồn Passive nên rất an toàn, không gửi gói tin tấn công trực tiếp vào mục tiêu.
+  📖 **Cách sử dụng**
+  Click vào icon Subdomain Finder trên thanh trình duyệt (Ghim nó ra ngoài để dễ bấm).
 
-Cột trạng thái "Server/Cloud" có thể hiện thị "Unreachable" hoặc "Online" nếu server chặn request check header (CORS policy), nhưng subdomain đó vẫn tồn tại.
+  Nhập tên miền cần quét vào ô trống (Ví dụ: uit.edu.vn, google.com).
 
-🤝 Đóng góp
-Mọi đóng góp, báo lỗi hoặc yêu cầu tính năng mới đều được hoan nghênh. Hãy tạo Pull Request hoặc Issue trên GitHub.
+  Nhấn Enter hoặc nút Quét.
 
-Developed by Team 14
+  Đợi vài giây để tool thu thập dữ liệu.
+
+  Kết quả sẽ hiển thị danh sách Subdomain và trạng thái Server (Cloudflare/AWS/Online).
+
+  
+
+  ⚠️ **Lưu ý**
+  Tool sử dụng các nguồn Passive nên rất an toàn, không gửi gói tin tấn công trực tiếp vào mục tiêu.
+
+  Cột trạng thái "Server/Cloud" có thể hiện thị "Unreachable" hoặc "Online" nếu server chặn request check header (CORS policy), nhưng subdomain đó vẫn tồn tại.
+
+  
+
+  🤝 **Đóng góp**
+  Mọi đóng góp, báo lỗi hoặc yêu cầu tính năng mới đều được hoan nghênh. Hãy tạo Pull Request hoặc Issue trên GitHub.
+
+  Developed by Team 14
+
