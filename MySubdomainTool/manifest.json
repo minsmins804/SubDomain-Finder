@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Subdomain Finder Tool",
+  "version": "1.0",
+  "description": "Tool tìm subdomain đơn giản chuyển từ Python",
+  "permissions": ["activeTab", "storage"],
+  "host_permissions": [
+    "https://*.hackertarget.com/*",
+    "https://crt.sh/*",
+    "https://otx.alienvault.com/*",
+    "http://web.archive.org/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Tìm Subdomain"
+  },
+  "icons": {
+    "128": "icon.png"
+  }
+}

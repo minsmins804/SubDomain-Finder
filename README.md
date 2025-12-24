@@ -1,6 +1,6 @@
 # SubDomain-Finder
 
-A high-performance subdomain discovery tool, designed for security professionals and system administrators.
+A high-performance subdomain discovery tool inspired by Sublist3r, designed for security professionals and system administrators.
 
 ## Features
 
@@ -82,5 +82,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Acknowledgments
 
+- Inspired by [Sublist3r](https://github.com/aboul3la/Sublist3r)
 - Thanks to all third-party services for their APIs
-
