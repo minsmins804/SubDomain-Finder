@@ -1,86 +1,67 @@
-# SubDomain-Finder
+# 🕵️ Subdomain Finder Extension
 
-A high-performance subdomain discovery tool inspired by Sublist3r, designed for security professionals and system administrators.
+Công cụ tìm kiếm Subdomain mạnh mẽ, nhanh gọn chạy trực tiếp trên trình duyệt (Chrome/Edge/Cốc Cốc).
+Dự án được chuyển đổi từ Python Script sang Web Extension để tiện lợi hơn trong quá trình Reconnaissance.
 
-## Features
+## 🚀 Tính năng nổi bật
 
-- Fast subdomain enumeration using asyncio for concurrent operations
-- Brute-force subdomain discovery using customizable wordlists
-- Integration with multiple third-party services:
-  - VirusTotal
-  - DNSdumpster
-  - Certificate Transparency logs
-- Multi-threaded DNS resolution
-- Flexible output formats (text and JSON)
+* **Tốc độ cao:** Sử dụng cơ chế tìm kiếm thụ động (Passive Enumeration) từ 3 nguồn uy tín:
+    * HackerTarget
+    * Crt.sh (Certificate Transparency)
+    * AlienVault OTX
+* **Không cần API Key:** Cài đặt là chạy ngay, không cần cấu hình phức tạp.
+* **Check Cloud Provider:** Tự động kiểm tra HTTP Header để phát hiện nếu subdomain đang sử dụng **Cloudflare** hoặc **AWS**.
+* **Tự động lưu (Auto-save):** Kết quả quét được lưu lại trong bộ nhớ trình duyệt, không bị mất đi khi tắt Popup.
+* **Tiện ích:**
+    * Click vào subdomain để mở tab mới.
+    * Nút **Copy All** để sao chép toàn bộ danh sách.
+    * Nút **Xóa** để dọn dẹp kết quả cũ.
 
-## Installation
+    ⚙️ Hướng dẫn cài đặt (Installation)
+Vì đây là Extension dạng Developer (Unpacked), bạn cần cài đặt thủ công theo 3 bước sau:
 
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/SubDomain-Finder.git
-cd SubDomain-Finder
+Bước 1: Chuẩn bị
+Tải source code về máy và giải nén. Đảm bảo bạn đã thấy thư mục tên là MySubdomainTool chứa 4 file code trên.
 
-# Create a virtual environment (recommended)
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+Bước 2: Mở trình quản lý Extension
+Mở trình duyệt (Chrome, Edge, Brave, hoặc Cốc Cốc).
 
-# Install dependencies
-pip install -r requirements.txt
-```
+Nhập địa chỉ sau vào thanh URL và nhấn Enter:
 
-## Usage
+Chrome: chrome://extensions/
 
-```bash
-python main.py -d example.com [options]
+Edge: edge://extensions/
 
-Options:
-  -d, --domain     Target domain to scan for subdomains
-  -w, --wordlist   Path to custom wordlist for brute-force (default: wordlists/default.txt)
-  -o, --output     Output file path
-  -f, --format     Output format (text/json) (default: text)
-  -t, --threads    Number of concurrent threads (default: 10)
-  -v, --verbose    Enable verbose output
-```
+QUAN TRỌNG: Bật chế độ Developer mode (Chế độ dành cho nhà phát triển) ở góc trên bên phải màn hình.
 
-## Example
+Bước 3: Tải Extension lên
+Nhấn vào nút Load unpacked (Tải tiện ích đã giải nén) ở góc trái trên cùng.
 
-```bash
-# Basic usage
-python main.py -d example.com
+Một cửa sổ chọn thư mục hiện ra.
 
-# Using a custom wordlist with JSON output
-python main.py -d example.com -w custom_wordlist.txt -o results.json -f json
+Lưu ý: Hãy chọn đúng thư mục MySubdomainTool (thư mục con chứa file manifest.json).
 
-# Verbose mode with increased threads
-python main.py -d example.com -t 20 -v
-```
+Nhấn Select Folder.
 
-## Configuration
+🎉 Xong! Biểu tượng Extension sẽ xuất hiện trên thanh công cụ của trình duyệt.
 
-Create a `.env` file in the project root with your API keys:
+📖 Cách sử dụng
+Click vào icon Subdomain Finder trên thanh trình duyệt (Ghim nó ra ngoài để dễ bấm).
 
-```
-VIRUSTOTAL_API_KEY=your_api_key_here
-```
+Nhập tên miền cần quét vào ô trống (Ví dụ: uit.edu.vn, google.com).
 
-## API Integration
+Nhấn Enter hoặc nút Quét.
 
-The tool integrates with the following third-party services:
-- VirusTotal API
-- DNSdumpster
-- Certificate Transparency logs
+Đợi vài giây để tool thu thập dữ liệu.
 
-Each service is implemented as a separate module for easy maintenance and extensibility.
+Kết quả sẽ hiển thị danh sách Subdomain và trạng thái Server (Cloudflare/AWS/Online).
 
-## Contributing
+⚠️ Lưu ý
+Tool sử dụng các nguồn Passive nên rất an toàn, không gửi gói tin tấn công trực tiếp vào mục tiêu.
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Cột trạng thái "Server/Cloud" có thể hiện thị "Unreachable" hoặc "Online" nếu server chặn request check header (CORS policy), nhưng subdomain đó vẫn tồn tại.
 
-## License
+🤝 Đóng góp
+Mọi đóng góp, báo lỗi hoặc yêu cầu tính năng mới đều được hoan nghênh. Hãy tạo Pull Request hoặc Issue trên GitHub.
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- Inspired by [Sublist3r](https://github.com/aboul3la/Sublist3r)
-- Thanks to all third-party services for their APIs
+Developed by Team 14
