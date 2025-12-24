@@ -21,51 +21,63 @@ Dự án được chuyển đổi từ Python Script sang Web Extension để ti
   * Nút **Xóa** để dọn dẹp kết quả cũ.
 
   ⚙️ Hướng dẫn cài đặt (Installation)
+  
+
   Vì đây là Extension dạng Developer (Unpacked), bạn cần cài đặt thủ công theo 3 bước sau:
 
   
 
+  
+
   **Bước 1**: Chuẩn bị
-  Tải source code về máy và giải nén. Đảm bảo bạn đã thấy thư mục tên là MySubdomainTool chứa 4 file code trên.
+  	Tải source code về máy và giải nén. Đảm bảo bạn đã thấy thư mục tên là MySubdomainTool chứa 4 file code trên.
+
+  
 
   
 
   **Bước 2**: Mở trình quản lý Extension
-  Mở trình duyệt (Chrome, Edge, Brave, hoặc Cốc Cốc).
+  	Mở trình duyệt (Chrome, Edge, Brave, hoặc Cốc Cốc).
 
-  Nhập địa chỉ sau vào thanh URL và nhấn Enter:
+  &nbsp;	Nhập địa chỉ sau vào thanh URL và nhấn Enter:
 
-  Chrome: chrome://extensions/
+  &nbsp;	Chrome: chrome://extensions/
 
-  Edge: edge://extensions/
+  &nbsp;	Edge: edge://extensions/
 
-  QUAN TRỌNG: Bật chế độ Developer mode (Chế độ dành cho nhà phát triển) ở góc trên bên phải màn hình.
+  &nbsp;	QUAN TRỌNG: Bật chế độ Developer mode (Chế độ dành cho nhà phát triển) ở góc trên bên phải màn hình.
+
+  
 
   
 
   **Bước 3**: Tải Extension lên
-  Nhấn vào nút Load unpacked (Tải tiện ích đã giải nén) ở góc trái trên cùng.
+  	Nhấn vào nút Load unpacked (Tải tiện ích đã giải nén) ở góc trái trên cùng.
 
-  Một cửa sổ chọn thư mục hiện ra.
+  &nbsp;	Một cửa sổ chọn thư mục hiện ra.
 
-  Lưu ý: Hãy chọn đúng thư mục MySubdomainTool (thư mục con chứa file manifest.json).
+  &nbsp;	Lưu ý: Hãy chọn đúng thư mục MySubdomainTool (thư mục con chứa file manifest.json).
 
-  Nhấn Select Folder.
+  &nbsp;	Nhấn Select Folder.
 
   🎉 Biểu tượng Extension sẽ xuất hiện trên thanh công cụ của trình duyệt.
 
   
 
+  
+
   📖 **Cách sử dụng**
-  Click vào icon Subdomain Finder trên thanh trình duyệt (Ghim nó ra ngoài để dễ bấm).
+  -Click vào icon Subdomain Finder trên thanh trình duyệt (Ghim nó ra ngoài để dễ bấm).
 
-  Nhập tên miền cần quét vào ô trống (Ví dụ: uit.edu.vn, google.com).
+  -Nhập tên miền cần quét vào ô trống (Ví dụ: uit.edu.vn, google.com).
 
-  Nhấn Enter hoặc nút Quét.
+  -Nhấn Enter hoặc nút Quét.
 
-  Đợi vài giây để tool thu thập dữ liệu.
+  -Đợi vài giây để tool thu thập dữ liệu.
 
-  Kết quả sẽ hiển thị danh sách Subdomain và trạng thái Server (Cloudflare/AWS/Online).
+  -Kết quả sẽ hiển thị danh sách Subdomain và trạng thái Server (Cloudflare/AWS/Online).
+
+  
 
   
 
@@ -76,8 +88,12 @@ Dự án được chuyển đổi từ Python Script sang Web Extension để ti
 
   
 
+  
+
   🤝 **Đóng góp**
   Mọi đóng góp, báo lỗi hoặc yêu cầu tính năng mới đều được hoan nghênh. Hãy tạo Pull Request hoặc Issue trên GitHub.
+
+  
 
   Developed by Team 14
 
