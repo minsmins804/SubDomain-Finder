@@ -1,7 +1,9 @@
 # 🕵️ Subdomain Finder Extension
 
-Công cụ tìm kiếm Subdomain mạnh mẽ, nhanh gọn chạy trực tiếp trên trình duyệt (Chrome/Edge/Cốc Cốc).
+-Công cụ tìm kiếm Subdomain mạnh mẽ, nhanh gọn chạy trực tiếp trên trình duyệt (Chrome/Edge/Cốc Cốc).
 Dự án được chuyển đổi từ Python Script sang Web Extension để tiện lợi hơn trong quá trình Reconnaissance.
+
+-GVHD: Thầy Trần Tuấn Dũng
 
 ## 🚀 Tính năng nổi bật
 
@@ -95,5 +97,5 @@ Dự án được chuyển đổi từ Python Script sang Web Extension để ti
 
   
 
-  Developed by Team 14 | GVHD: Thầy Trần Tuấn Dũng
+  Developed by Team 14 
 
