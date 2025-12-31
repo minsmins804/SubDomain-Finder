@@ -69,6 +69,7 @@ Dự án được chuyển đổi từ Python Script sang Web Extension để ti
   
 
   📖 **Cách sử dụng**
+  
   -Click vào icon Subdomain Finder trên thanh trình duyệt (Ghim nó ra ngoài để dễ bấm).
 
   -Nhập tên miền cần quét vào ô trống (Ví dụ: uit.edu.vn, google.com).
