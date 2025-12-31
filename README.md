@@ -95,5 +95,5 @@ Dự án được chuyển đổi từ Python Script sang Web Extension để ti
 
   
 
-  Developed by Team 14
+  Developed by Team 14 | GVHD: Thầy Trần Tuấn Dũng
 
